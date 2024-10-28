@@ -14,16 +14,25 @@
           <label>Inicio</label>
         </ion-button>
       </ion-item>
+
       <ion-item>
         <ion-button routerLink="/about">
           <ion-icon name="alert-circle-outline"></ion-icon>
           <label>Sobre Nosotros</label>
         </ion-button>
       </ion-item>
+
       <ion-item>
         <ion-button routerLink="/ubicacion">
           <ion-icon name="location-outline"></ion-icon>
           <label>Ubicacion</label>
+        </ion-button>
+      </ion-item>
+
+      <ion-item>
+        <ion-button routerLink="/register-car">
+          <ion-icon name="car-outline"></ion-icon>
+          <label>Registrar vehiculos</label>
         </ion-button>
       </ion-item>
     </ion-list>
@@ -31,6 +40,12 @@
     <div style="flex-grow: 1;"></div>
 
     <ion-list>
+      <ion-item>
+        <ion-button routerLink="/perfil">
+          <ion-icon name="person-circle"></ion-icon>
+          <label>Perfil</label>
+        </ion-button>
+      </ion-item>
       <ion-item>
         <ion-button (click)="logout()">
           <ion-icon name="log-out-outline"></ion-icon>

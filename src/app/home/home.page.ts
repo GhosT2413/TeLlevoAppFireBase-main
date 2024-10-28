@@ -27,7 +27,7 @@ export class HomePage {
   }
 
   goToLogin() {
-    this.router.navigate(['/listar-carros']);
+    this.router.navigate(['/list-car']);
   }
 
   ngOnInit() {

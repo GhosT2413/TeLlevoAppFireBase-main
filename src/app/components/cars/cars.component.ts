@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CarsService,Car } from '../../services/cars.service';
+import { CarsService,Car} from '../../services/cars.service'
 
 @Component({
   selector: 'app-cars',
@@ -7,15 +7,17 @@ import { CarsService,Car } from '../../services/cars.service';
   styleUrls: ['./cars.component.scss'],
 })
 export class CarsComponent  implements OnInit {
-  car:Car = {patente:"",year:0,imagenUrl:"",nombre:""}
-  constructor(private carsService :CarsService) { }
+  car:Car = {patente:"",year:0,imageUrl:"",nombre:""}
 
+  constructor(private carService:CarsService) { }
 
   ngOnInit() {}
+
   addCar(){
-      this.carsService.addCar(this.car).then(()=>{
-        alert("Agregado Correctamente")
-        this.car = {patente:"",year:0,imagenUrl:"",nombre:""} 
-      }).catch(error=>{alert("error al agregar "+error)})
+    this.carService.addCar(this.car).then(()=>{
+      alert("Agregado correctamente!")
+      this.car = {patente:"",year:0,imageUrl:"",nombre:""}
+    }).catch(error=>{"Error al agregar!"})
   }
+
 }

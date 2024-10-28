@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastController } from '@ionic/angular';
 
-
 @Component({
-  selector: 'app-ubicacion',
-  templateUrl: './ubicacion.page.html',
-  styleUrls: ['./ubicacion.page.scss'],
+  selector: 'app-list-car',
+  templateUrl: './list-car.page.html',
+  styleUrls: ['./list-car.page.scss'],
 })
-export class UbicacionPage implements OnInit {
+export class ListCarPage implements OnInit {
 
   constructor(private toastController: ToastController) { }
 
@@ -20,7 +19,6 @@ export class UbicacionPage implements OnInit {
     await toast.present();
   }
 
-  
   ngOnInit() {
   }
 

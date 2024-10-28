@@ -32,20 +32,20 @@ const routes: Routes = [
     loadChildren: () => import('./ubicacion/ubicacion.module').then( m => m.UbicacionPageModule)
   },
   {
-    path: 'listar-carros',
-    loadChildren: () => import('./listar-carros/listar-carros.module').then( m => m.ListarCarrosPageModule)
-  },
-  {
-    path: 'login-car',
-    loadChildren: () => import('./login-car/login-car.module').then( m => m.LoginCarPageModule)
-  },
-  {
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   },
   {
     path: 'gestion-usuario',
     loadChildren: () => import('./gestion-usuario/gestion-usuario.module').then( m => m.GestionUsuarioPageModule)
+  },
+  {
+    path: 'list-car',
+    loadChildren: () => import('./list-car/list-car.module').then( m => m.ListCarPageModule)
+  },
+  {
+    path: 'register-car',
+    loadChildren: () => import('./register-car/register-car.module').then( m => m.RegisterCarPageModule)
   },
 ];
 
